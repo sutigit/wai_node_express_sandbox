@@ -1,0 +1,42 @@
+{
+	"name": "wai_node_express_sandbox",
+	"version": "1.0.0",
+	"description": "sandbox for node stuff",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"dev": "tsx --watch src/index.ts",
+		"start": "node dist/index.js",
+		"build": "tsc",
+		"type-check": "tsc --noEmit",
+		"lint": "biome lint",
+		"lint:fix": "biome lint --write",
+		"format": "biome format --write",
+		"format:check": "biome format",
+		"check": "biome check",
+		"check:fix": "biome check --write",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sutigit/wai_node_express_sandbox.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/sutigit/wai_node_express_sandbox/issues"
+	},
+	"homepage": "https://github.com/sutigit/wai_node_express_sandbox#readme",
+	"dependencies": {
+		"express": "^5.2.1"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.4.9",
+		"@tsconfig/node-lts": "^24.0.0",
+		"@types/express": "^5.0.6",
+		"@types/node": "^25.5.0",
+		"tsx": "^4.21.0",
+		"typescript": "^6.0.2"
+	}
+}
